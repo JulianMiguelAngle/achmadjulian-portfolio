@@ -1,0 +1,115 @@
+.about-section {
+    padding-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    align-items: center;
+
+    text-align: center;   
+}
+
+.about-section .about-headline-supporting-headline {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.about-section .about-headline-supporting-headline h1 {
+    font-family: 'dm-sans-medium';
+    color: var(--neutral-700);
+    font-size: 16px;
+}
+
+.about-section .about-headline-supporting-headline h2 {
+    font-family: 'dm-sans-regular';
+    color: var(--neutral-600);
+    font-size: 28px; 
+}
+
+.about-section .about-article-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    max-width: 800px;
+}
+
+.about-section .about-article-section .article-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    align-items: end;
+    text-align: right
+}
+
+.about-section .about-article-section .article-section .content:nth-child(even):not(img) {
+    align-items: start;
+    text-align: left;
+}
+
+.about-section .about-article-section .article-section img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+    border: 2px dashed var(--neutral-500)
+}
+
+.about-section .about-article-section .article-section .headline {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.about-section .about-article-section .article-section .content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px
+}
+
+.about-section .about-article-section .article-section .content h1 {
+    font-family: 'dm-sans-medium';
+    color: var(--neutral-700);
+    font-size: 24px;
+}
+
+.about-section .about-article-section .article-section .content p {
+    font-family: 'dm-sans-regular';
+    color: var(--neutral-500);
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 580px) {
+    .about-section .about-headline-supporting-headline h1 {
+        font-size: 18px;
+    }
+
+    .about-section .about-headline-supporting-headline h2 {
+        font-family: 'dm-sans-regular';
+        font-size: 32px; 
+    }
+
+    .about-section .about-article-section .article-section .content h1 {
+        font-size: 28px;
+    }
+
+    .about-section .about-article-section .article-section .content p {
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1080px) {
+    .header {
+        padding: 0 24px;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .header .navigation {
+        display: flex;
+    }
+}

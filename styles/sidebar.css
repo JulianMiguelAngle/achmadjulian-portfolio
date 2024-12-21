@@ -1,0 +1,40 @@
+.sidebar {
+    background-color: var(--neutral-0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+    transform: translate(-1000px, 0);
+    position: fixed;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'dm-sans-regular';
+
+    width: 100%;
+    max-width: 300px;
+
+    padding: 48px 16px;
+    box-shadow: 6px 0 24px 0 var(--neutral-white-0);
+}
+
+.sidebar a {
+    font-size: 14px;
+
+    text-decoration: none;
+
+    color: var(--neutral-500);
+}
+  
+.open {
+    transform: translate(0, 0);
+}
+
+@media only screen and (min-width: 580px) {
+    .sidebar a {
+        font-size: 16px;
+    }
+}  

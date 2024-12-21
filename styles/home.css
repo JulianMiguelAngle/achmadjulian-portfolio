@@ -1,0 +1,39 @@
+.hero-section {
+    padding-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    align-items: center;
+
+    text-align: center;
+    font-family: 'dm-sans-regular';
+}
+
+.hero-section .hero-image {
+    height: 150px;
+    object-fit: contain;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8;
+    max-width: 400px;
+}
+
+.hero-section .hero-content h1 {
+    font-size: 32px;
+    color: var(--neutral-600);
+}
+
+.hero-section .hero-content h2 {
+    font-size: 18px;
+    color: var(--neutral-700);
+}
+
+.hero-section p {
+    font-size: 14px;
+    color: var(--neutral-500);
+    max-width: 600px;
+}

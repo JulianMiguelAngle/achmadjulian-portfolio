@@ -1,0 +1,19 @@
+.resume {
+    z-index: 24;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: calc(100vh - 200px);
+    width: 100%;
+
+    transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+    transform: translate(0, 100vw);
+
+    padding: 16px;
+    background-color: var(--neutral-0);
+}
+
+.resume-open {
+    transform: translate(0, 0);
+}
