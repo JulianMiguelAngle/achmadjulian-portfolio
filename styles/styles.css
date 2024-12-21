@@ -45,9 +45,8 @@
 }
 
 .page {
-  height: 100vh;
-
-  overflow: hidden;
+  overflow-x: hidden;
+  height: calc(100% - (80px + 50px));
 
   padding-top: 100px;
   padding-left: 16px;
